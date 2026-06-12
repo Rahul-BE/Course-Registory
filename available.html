@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        background-color: #ccc;
+      }
+      table {
+        margin-top: 30px;
+        border-radius: 10px;
+        border-collapse: collapse;
+        box-shadow: 0 2px 4px black;
+        background-color: #ccc;
+        width: 80%;
+        height: auto;
+      }
+      table,
+      th,
+      td {
+        border: 2px solid black;
+        padding: 10px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      th {
+        background-color: orange;
+      }
+      td {
+        background-color: white;
+      }
+      th,
+      td {
+        text-align: center;
+        border-top: 10px;
+      }
+      .back-arrow {
+        position: absolute;
+        top: 90px;
+        left: 60px;
+        font-size: 20px;
+        text-decoration: none;
+        color: orange;
+        font-weight: bold;
+        transition: color 0.3s ease-in-out;
+      }
+      .back-arrow:hover {
+        color: darkorange;
+      }
+      body{
+        background-image: url('./available.avif');
+        background-size: cover;
+      }
+    </style>
+
+    <script type="text/javascript" src="myscript.js"></script>
+  </head>
+  <body>
+    <a href="index.html" class="back-arrow">⬅ Back</a>
+    <h1 style="color: orange; text-align: center">Available Courses</h1>
+    <table align="center">
+      <tr align="center" style="background-color: orange; color: white">
+        <th>Course Id</th>
+        <th>Trainer</th>
+        <th>Course Name</th>
+        <th>Course Duration</th>
+      </tr>
+      <tbody id="courseTable" align="center"></tbody>
+    </table>
+
+    <script type="text/javascript">
+      window.onload = function () {
+        showCourses();
+      };
+    </script>
+  </body>
+</html>
