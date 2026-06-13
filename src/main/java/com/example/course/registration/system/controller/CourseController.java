@@ -15,7 +15,7 @@ import com.example.course.registration.system.entity.CourseRegistry;
 import com.example.course.registration.system.service.CourseService;
 
 @RestController
-@CrossOrigin(origins = "http://127.0.0.1:5500")
+@CrossOrigin(origins = "https://course-registory.vercel.app")
 public class CourseController {
 	
 	@Autowired
