@@ -65,8 +65,8 @@
       .back-arrow:hover {
         color: darkorange;
       }
-      body{
-        background-image: url('./register.avif');
+      body {
+        background-image: url("./register.avif");
         background-size: cover;
         opacity: 0.9;
       }
@@ -77,7 +77,11 @@
 
     <h1>Kickstart with an exiting course 🧶</h1>
 
-    <form action="http://localhost:8080/course/register" method="post">
+    <!-- <form action="http://localhost:8080/course/register" method="post"> -->
+    <form
+      action="https://course-registry-backend.onrender.com/course/register"
+      method="post"
+    >
       <label for="name">Enter Your Name: </label><br />
       <input type="text" name="name" /><br /><br />
 
