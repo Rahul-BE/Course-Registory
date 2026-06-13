@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Register</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        color: orange;
+        background-color: #ccc;
+      }
+      form {
+        margin-top: 30px;
+        border: none;
+        padding: 20px;
+        border-radius: 10px;
+        display: inline-block;
+        transition: transform 0.3s ease-in-out;
+        text-align: left;
+        box-shadow: 0 2px 4px orange;
+        background-color: white;
+      }
+      form:hover {
+        transform: scale(1.02);
+        box-shadow: 0 4px 8px orange;
+      }
+      input,
+      select {
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+        width: 250px;
+      }
+      label {
+        font-size: 18px;
+        margin-left: 10px;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(255, 166, 0);
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+        margin-left: 90px;
+      }
+      button:hover {
+        background-color: darkorange;
+        transform: scale(1.02);
+      }
+      .back-arrow {
+        position: absolute;
+        top: 100px;
+        left: 500px;
+        font-size: 20px;
+        text-decoration: none;
+        color: orange;
+        font-weight: bold;
+        transition: color 0.3s ease-in-out;
+      }
+      .back-arrow:hover {
+        color: darkorange;
+      }
+      body {
+        background-image: url("./register.avif");
+        background-size: cover;
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="index.html" class="back-arrow">⬅ Back</a>
+
+    <h1>Kickstart with an exiting course 🧶</h1>
+
+    <!-- <form action="http://localhost:8080/course/register" method="post"> -->
+    <form action="https://course-registory.onrender.com/course/register" method="post">
+
+      <label for="name">Enter Your Name: </label><br />
+      <input type="text" name="name" /><br /><br />
+
+      <label for="email">Enter Your Email: </label><br />
+      <input type="email" name="emailId" /><br /><br />
+
+      <label for="course">Choose a Course: </label><br />
+      <select name="courseName">
+        <option value=" Core Java">Core Java</option>
+        <option value="Spring Boot">Spring Boot</option>
+        <option value="Web Technologies">Web Technologies</option></select
+      ><br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+    <br /><br />
+  </body>
+</html>
